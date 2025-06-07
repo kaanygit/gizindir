@@ -1,23 +1,44 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using System.IO;
 using System.Windows.Forms;
-using System.Configuration;
+using gizindir.data;
 
 namespace gizindir
 {
     internal static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new RegisterForm());
+
+            string sessionTokenFile = "session_token.txt";
+
+            if (File.Exists(sessionTokenFile))
+            {
+                string token = File.ReadAllText(sessionTokenFile).Trim();
+                if (!string.IsNullOrEmpty(token))
+                {
+                    var repo = new UserRepository();
+                    var user = repo.GetUserBySessionToken(token);
+
+                    if (user != null)
+                    {
+                        bool isCompleted = repo.IsProfileCompleted(user.Email);
+
+                        if (!isCompleted)
+                            Application.Run(new ProfileForm(user));
+                        else
+                            Application.Run(new Main(user.Email));
+
+                        return;
+                    }
+                }
+            }
+
+            // Oturum yoksa onboarding ekranına yönlendir
+            Application.Run(new Onboarding());
         }
     }
 }
