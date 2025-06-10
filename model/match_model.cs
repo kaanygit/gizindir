@@ -12,6 +12,15 @@ namespace gizindir.model
         public int User1Id { get; set; }
         public int User2Id { get; set; }
         public DateTime MatchedAt { get; set; }
+        
+        // Eşleşilen kullanıcının bilgileri
+        public string MatchedUserName { get; set; } = "";
+        public string MatchedUserEmail { get; set; } = "";
+        
+        // Dinamik chat modeli için kullanılacak özellikler (UI için)
+        public string LastMessage { get; set; } = "";
+        public DateTime? LastMessageTime { get; set; }
+        public bool IsOnline { get; set; }
+        public int UnreadCount { get; set; }
     }
-
 }

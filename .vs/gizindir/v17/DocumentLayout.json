@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\yasin\\OneDrive\\Belgeler\\gizindir\\gizindir\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E8DD80DA-6828-449E-BB5B-98B371F23C57}|gizindir.csproj|c:\\users\\yasin\\onedrive\\belgeler\\gizindir\\gizindir\\chatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E8DD80DA-6828-449E-BB5B-98B371F23C57}|gizindir.csproj|solutionrelative:chatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DD80DA-6828-449E-BB5B-98B371F23C57}|gizindir.csproj|c:\\users\\yasin\\onedrive\\belgeler\\gizindir\\gizindir\\model\\match_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DD80DA-6828-449E-BB5B-98B371F23C57}|gizindir.csproj|solutionrelative:model\\match_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E8DD80DA-6828-449E-BB5B-98B371F23C57}|gizindir.csproj|c:\\users\\yasin\\onedrive\\belgeler\\gizindir\\gizindir\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8DD80DA-6828-449E-BB5B-98B371F23C57}|gizindir.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8DD80DA-6828-449E-BB5B-98B371F23C57}|gizindir.csproj|c:\\users\\yasin\\onedrive\\belgeler\\gizindir\\gizindir\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E8DD80DA-6828-449E-BB5B-98B371F23C57}|gizindir.csproj|C:\\Users\\yasin\\OneDrive\\Belgeler\\gizindir\\gizindir\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E8DD80DA-6828-449E-BB5B-98B371F23C57}|gizindir.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -18,8 +26,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Main.cs",
+              "DocumentMoniker": "C:\\Users\\yasin\\OneDrive\\Belgeler\\gizindir\\gizindir\\Main.cs",
+              "RelativeDocumentMoniker": "Main.cs",
+              "ToolTip": "C:\\Users\\yasin\\OneDrive\\Belgeler\\gizindir\\gizindir\\Main.cs",
+              "RelativeToolTip": "Main.cs",
+              "ViewState": "AgIAABkDAAAAAAAAAAA7wCUDAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-07T16:39:26.08Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -27,19 +49,31 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Main.cs",
-              "DocumentMoniker": "C:\\Users\\yasin\\OneDrive\\Belgeler\\gizindir\\gizindir\\Main.cs",
-              "RelativeDocumentMoniker": "Main.cs",
-              "ToolTip": "C:\\Users\\yasin\\OneDrive\\Belgeler\\gizindir\\gizindir\\Main.cs",
-              "RelativeToolTip": "Main.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Title": "ChatForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\yasin\\OneDrive\\Belgeler\\gizindir\\gizindir\\ChatForm.cs",
+              "RelativeDocumentMoniker": "ChatForm.cs",
+              "ToolTip": "C:\\Users\\yasin\\OneDrive\\Belgeler\\gizindir\\gizindir\\ChatForm.cs [Design]",
+              "RelativeToolTip": "ChatForm.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T16:39:26.08Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-10T15:06:36.375Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "match_model.cs",
+              "DocumentMoniker": "C:\\Users\\yasin\\OneDrive\\Belgeler\\gizindir\\gizindir\\model\\match_model.cs",
+              "RelativeDocumentMoniker": "model\\match_model.cs",
+              "ToolTip": "C:\\Users\\yasin\\OneDrive\\Belgeler\\gizindir\\gizindir\\model\\match_model.cs",
+              "RelativeToolTip": "model\\match_model.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T12:55:23.964Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Main.cs [Design]",
               "DocumentMoniker": "C:\\Users\\yasin\\OneDrive\\Belgeler\\gizindir\\gizindir\\Main.cs",
               "RelativeDocumentMoniker": "Main.cs",

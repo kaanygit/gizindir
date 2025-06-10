@@ -14,8 +14,8 @@ namespace gizindir
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            var email = txtEmail.Text.Trim();
-            var password = txtPassword.Text.Trim();
+            var email = textBox2.Text.Trim();
+            var password = textBox1.Text.Trim();
 
             if (string.IsNullOrWhiteSpace(email) || string.IsNullOrWhiteSpace(password))
             {

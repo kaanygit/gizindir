@@ -84,6 +84,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChatForm.Designer.cs">
+      <DependentUpon>ChatForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="core\ImageCacheHelper.cs" />
     <Compile Include="data\DbContext..cs" />
     <Compile Include="data\MatchRepository.cs" />
     <Compile Include="data\MessageRepository.cs" />
@@ -126,7 +133,9 @@
     </Compile>
     <Compile Include="state\AppState.cs" />
     <Compile Include="UIWidgets\CustomMessageBox.cs" />
-    <Compile Include="view\ChatForm.cs" />
+    <Compile Include="view\ChatForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="view\LoginForm.cs" />
     <Compile Include="view\RegisterForm.cs" />
     <Compile Include="view\SwipeForm.cs" />
