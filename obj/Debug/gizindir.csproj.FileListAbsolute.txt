@@ -40,3 +40,45 @@ C:\Users\yasin\OneDrive\Belgeler\gizindir\gizindir\obj\Debug\gizindir.csproj.Cor
 C:\Users\yasin\OneDrive\Belgeler\gizindir\gizindir\obj\Debug\gizindir.csproj.Up2Date
 C:\Users\yasin\OneDrive\Belgeler\gizindir\gizindir\obj\Debug\gizindir.exe
 C:\Users\yasin\OneDrive\Belgeler\gizindir\gizindir\obj\Debug\gizindir.pdb
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\gizindir.exe.config
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\gizindir.exe
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\gizindir.pdb
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\Npgsql.dll
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\System.Buffers.dll
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\System.Memory.dll
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\System.Text.Json.dll
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\System.Threading.Channels.dll
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\System.ValueTuple.dll
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\Npgsql.xml
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\System.Buffers.xml
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\System.Memory.xml
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\System.Text.Json.xml
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\System.Threading.Channels.xml
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\bin\Debug\System.ValueTuple.xml
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\obj\Debug\gizindir.csproj.AssemblyReference.cache
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\obj\Debug\gizindir.csproj.SuggestedBindingRedirects.cache
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\obj\Debug\gizindir.exe.config
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\obj\Debug\gizindir.Form1.resources
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\obj\Debug\gizindir.LoginForm.resources
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\obj\Debug\gizindir.Main.resources
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\obj\Debug\gizindir.Onboarding.resources
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\obj\Debug\gizindir.ProfileForm.resources
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\obj\Debug\gizindir.Properties.Resources.resources
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\obj\Debug\gizindir.RegisterForm.resources
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\obj\Debug\gizindir.csproj.GenerateResource.cache
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\obj\Debug\gizindir.csproj.CoreCompileInputs.cache
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\obj\Debug\gizindir.csproj.Up2Date
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\obj\Debug\gizindir.exe
+C:\Users\gizem\OneDrive\Belgeler\NTP - GİZİNDİR\gizindir\obj\Debug\gizindir.pdb

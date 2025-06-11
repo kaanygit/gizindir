@@ -1,4 +1,4 @@
-﻿namespace gizindir
+namespace gizindir
 {
     partial class ChatForm
     {

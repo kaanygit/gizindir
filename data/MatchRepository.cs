@@ -14,17 +14,21 @@ namespace gizindir.data
             {
                 conn.Open();
                 
-                // Bu sorgu, hem user_interactions tablosundan eşleşmeleri alır
+                // Bu sorguyu yeniden düzenliyorum, çift kayıtları engellemek için DISTINCT kullanıyorum
                 var cmd = new NpgsqlCommand(@"
-                    SELECT u1.id, u1.email, u1.full_name, u2.id, u2.email, u2.full_name,
-                           ui1.created_at as matched_at
+                    SELECT DISTINCT ON (other_email) 
+                        u1.id as user_id, u1.email as user_email, u1.full_name as user_name,
+                        u2.id as other_id, u2.email as other_email, u2.full_name as other_name,
+                        MAX(ui1.created_at) as matched_at
                     FROM user_interactions ui1
                     JOIN user_interactions ui2 ON ui1.user_email = ui2.shown_user_email 
                                               AND ui1.shown_user_email = ui2.user_email
                     JOIN users u1 ON ui1.user_email = u1.email
                     JOIN users u2 ON ui1.shown_user_email = u2.email
                     WHERE (ui1.user_email = @email OR ui1.shown_user_email = @email)
-                    AND ui1.is_liked = true AND ui2.is_liked = true
+                        AND ui1.is_liked = true AND ui2.is_liked = true
+                    GROUP BY u1.id, u1.email, u1.full_name, u2.id, u2.email, u2.full_name
+                    ORDER BY other_email
                 ", conn);
 
                 cmd.Parameters.AddWithValue("email", email);

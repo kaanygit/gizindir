@@ -1,4 +1,4 @@
-﻿using gizindir.data;
+using gizindir.data;
 using gizindir.model;
 using gizindir.helpers;
 using gizindir.view;
@@ -19,6 +19,8 @@ namespace gizindir
         private List<UserModel> candidateUsers = new List<UserModel>();
         private int currentIndex = 0;
         private Timer animationTimer = new Timer();
+        private Timer messageCheckTimer = new Timer(); // Mesaj kontrolü için timer
+        private Dictionary<string, DateTime> lastMessageTimes = new Dictionary<string, DateTime>(); // Son mesaj zamanlarını saklamak için
 
         // Animasyon için değişkenler
         private Point cardOriginalLocation;
@@ -36,6 +38,11 @@ namespace gizindir
             // Timer ayarları
             animationTimer.Interval = 16; // ~60 FPS için
             animationTimer.Tick += AnimationTimer_Tick;
+            
+            // Mesaj kontrol timer'ı ayarları (her 5 saniyede bir kontrol et)
+            messageCheckTimer.Interval = 5000;
+            messageCheckTimer.Tick += MessageCheckTimer_Tick;
+            messageCheckTimer.Start();
         }
 
         private void Main_Load(object sender, EventArgs e)
@@ -50,7 +57,12 @@ namespace gizindir
                 LoadCurrentUserCard();
             else
                 MessageBox.Show("Gösterilecek başka kullanıcı bulunamadı.", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            
+            // Mesajları ve eşleşmeleri yükle
             LoadMatchedChats();
+            
+            // Son mesaj zamanlarını ilklendir
+            InitializeLastMessageTimes();
         }
 
         private void LoadCandidateUsers()
@@ -385,6 +397,10 @@ namespace gizindir
             {
                 animationTimer?.Stop();
                 animationTimer?.Dispose();
+                
+                // Mesaj kontrol timer'ını durdur
+                messageCheckTimer?.Stop();
+                messageCheckTimer?.Dispose();
 
                 // Profil resmini temizle
                 if (pbMainProfile?.Image != null && pbMainProfile.Image != Properties.Resources.placeholder)
@@ -498,6 +514,12 @@ namespace gizindir
                     
                     // Son mesaj bilgisini getir
                     var lastMessage = messageRepo.GetLastMessage(_email, match.MatchedUserEmail);
+                    
+                    // Son mesaj zamanını güncelle
+                    if (lastMessage != null)
+                    {
+                        lastMessageTimes[match.MatchedUserEmail] = lastMessage.SentAt;
+                    }
                     
                     // Dinamik chat nesnesi oluştur
                     dynamic chatData = new System.Dynamic.ExpandoObject();
@@ -809,6 +831,117 @@ namespace gizindir
         private void Main_Resize(object sender, EventArgs e)
         {
             AdjustFlowLayoutPanelSize();
+        }
+
+        // Son mesaj zamanlarını kaydetmek için kullanılan metod
+        private void InitializeLastMessageTimes()
+        {
+            try
+            {
+                var matchRepo = new MatchRepository();
+                var messageRepo = new MessageRepository();
+                
+                // Tüm eşleşmeleri al
+                var matches = matchRepo.GetMatchesByEmail(_email);
+                
+                // Her eşleşme için son mesaj zamanını sakla
+                foreach (var match in matches)
+                {
+                    var lastMessage = messageRepo.GetLastMessage(_email, match.MatchedUserEmail);
+                    if (lastMessage != null)
+                    {
+                        lastMessageTimes[match.MatchedUserEmail] = lastMessage.SentAt;
+                    }
+                    else
+                    {
+                        lastMessageTimes[match.MatchedUserEmail] = DateTime.MinValue;
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Son mesaj zamanları kaydedilirken hata: {ex.Message}");
+            }
+        }
+
+        private void MessageCheckTimer_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                // Kullanıcı repository'i oluştur
+                var userRepo = new UserRepository();
+                var currentUser = userRepo.GetUserByEmail(_email);
+                if (currentUser == null) return;
+
+                // Eşleşme ve mesaj repolarını oluştur
+                var matchRepo = new MatchRepository();
+                var messageRepo = new MessageRepository();
+                
+                // Eşleşmeleri getir
+                var matches = matchRepo.GetMatchesByEmail(_email);
+                
+                // Her eşleşme için yeni mesaj kontrolü yap
+                foreach (var match in matches)
+                {
+                    // Son mesajı al
+                    var lastMessage = messageRepo.GetLastMessage(_email, match.MatchedUserEmail);
+                    
+                    // Eğer son mesaj yoksa devam et
+                    if (lastMessage == null) continue;
+                    
+                    // Son kaydedilen mesaj zamanını al, yoksa DateTime.MinValue
+                    DateTime lastRecordedTime = DateTime.MinValue;
+                    if (lastMessageTimes.ContainsKey(match.MatchedUserEmail))
+                    {
+                        lastRecordedTime = lastMessageTimes[match.MatchedUserEmail];
+                    }
+                    
+                    // Eğer yeni mesaj varsa ve bu mesaj bize geldiyse bildirim göster
+                    if (lastMessage.SentAt > lastRecordedTime && lastMessage.ReceiverId == currentUser.Id && !lastMessage.IsRead)
+                    {
+                        // Son mesaj zamanını güncelle
+                        lastMessageTimes[match.MatchedUserEmail] = lastMessage.SentAt;
+                        
+                        // Okunmamış mesajı göster
+                        ShowNewMessageNotification(match.MatchedUserName, match.MatchedUserEmail, lastMessage.Content);
+                        
+                        // Chat listesini güncelle
+                        this.Invoke(new Action(() => LoadMatchedChats()));
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"Mesaj kontrolü sırasında hata: {ex.Message}");
+            }
+        }
+        
+        private void ShowNewMessageNotification(string senderName, string senderEmail, string messageContent)
+        {
+            // Kısa mesaj içeriğini hazırla
+            string shortMessage = messageContent;
+            if (shortMessage.Length > 30)
+                shortMessage = shortMessage.Substring(0, 27) + "...";
+                
+            // Bildirim penceresi göster
+            DialogResult result = MessageBox.Show(
+                $"{senderName} yeni bir mesaj gönderdi:\n\n{shortMessage}",
+                "Yeni Mesaj",
+                MessageBoxButtons.OKCancel,
+                MessageBoxIcon.Information
+            );
+            
+            // Eğer OK'a basıldıysa, sohbeti aç
+            if (result == DialogResult.OK)
+            {
+                // Dynamic nesne oluştur
+                dynamic chatData = new System.Dynamic.ExpandoObject();
+                chatData.Email = senderEmail;
+                chatData.Name = senderName;
+                
+                // Sohbeti aç
+                this.Invoke(new Action(() => OpenChatForm(chatData)));
+            }
         }
     }
 }

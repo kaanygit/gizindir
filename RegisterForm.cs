@@ -1,4 +1,4 @@
-﻿using gizindir.model;
+using gizindir.model;
 using gizindir.data;
 using System;
 using System.Windows.Forms;

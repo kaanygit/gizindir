@@ -1,4 +1,4 @@
-﻿using gizindir.data;
+using gizindir.data;
 using gizindir.UIWidgets;
 using System;
 using System.Windows.Forms;
@@ -42,7 +42,7 @@ namespace gizindir
                 return;
             }
 
-            bool isPasswordCorrect = BCrypt.Net.BCrypt.Verify(password, user.Password);
+            bool isPasswordCorrect = BCrypt.Net.BCrypt.Verify(password, user.PasswordHash);
 
             if (isPasswordCorrect)
             {

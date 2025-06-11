@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\yasin\\OneDrive\\Belgeler\\gizindir\\gizindir\\",
+  "WorkspaceRootPath": "C:\\Users\\gizem\\OneDrive\\Belgeler\\NTP - G\u0130Z\u0130ND\u0130R\\gizindir\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E8DD80DA-6828-449E-BB5B-98B371F23C57}|gizindir.csproj|c:\\users\\yasin\\onedrive\\belgeler\\gizindir\\gizindir\\chatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{E8DD80DA-6828-449E-BB5B-98B371F23C57}|gizindir.csproj|solutionrelative:chatform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{E8DD80DA-6828-449E-BB5B-98B371F23C57}|gizindir.csproj|c:\\users\\gizem\\onedrive\\belgeler\\ntp - g\u0130z\u0130nd\u0130r\\gizindir\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DD80DA-6828-449E-BB5B-98B371F23C57}|gizindir.csproj|solutionrelative:loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8DD80DA-6828-449E-BB5B-98B371F23C57}|gizindir.csproj|c:\\users\\yasin\\onedrive\\belgeler\\gizindir\\gizindir\\model\\match_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E8DD80DA-6828-449E-BB5B-98B371F23C57}|gizindir.csproj|c:\\users\\gizem\\onedrive\\belgeler\\ntp - g\u0130z\u0130nd\u0130r\\gizindir\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E8DD80DA-6828-449E-BB5B-98B371F23C57}|gizindir.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E8DD80DA-6828-449E-BB5B-98B371F23C57}|gizindir.csproj|C:\\Users\\gizem\\OneDrive\\Belgeler\\NTP - G\u0130Z\u0130ND\u0130R\\gizindir\\model\\match_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E8DD80DA-6828-449E-BB5B-98B371F23C57}|gizindir.csproj|solutionrelative:model\\match_model.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E8DD80DA-6828-449E-BB5B-98B371F23C57}|gizindir.csproj|c:\\users\\yasin\\onedrive\\belgeler\\gizindir\\gizindir\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E8DD80DA-6828-449E-BB5B-98B371F23C57}|gizindir.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E8DD80DA-6828-449E-BB5B-98B371F23C57}|gizindir.csproj|C:\\Users\\yasin\\OneDrive\\Belgeler\\gizindir\\gizindir\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{E8DD80DA-6828-449E-BB5B-98B371F23C57}|gizindir.csproj|C:\\Users\\gizem\\OneDrive\\Belgeler\\NTP - G\u0130Z\u0130ND\u0130R\\gizindir\\main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{E8DD80DA-6828-449E-BB5B-98B371F23C57}|gizindir.csproj|solutionrelative:main.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -26,62 +26,57 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Main.cs",
-              "DocumentMoniker": "C:\\Users\\yasin\\OneDrive\\Belgeler\\gizindir\\gizindir\\Main.cs",
-              "RelativeDocumentMoniker": "Main.cs",
-              "ToolTip": "C:\\Users\\yasin\\OneDrive\\Belgeler\\gizindir\\gizindir\\Main.cs",
-              "RelativeToolTip": "Main.cs",
-              "ViewState": "AgIAABkDAAAAAAAAAAA7wCUDAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-07T16:39:26.08Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ChatForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\yasin\\OneDrive\\Belgeler\\gizindir\\gizindir\\ChatForm.cs",
-              "RelativeDocumentMoniker": "ChatForm.cs",
-              "ToolTip": "C:\\Users\\yasin\\OneDrive\\Belgeler\\gizindir\\gizindir\\ChatForm.cs [Design]",
-              "RelativeToolTip": "ChatForm.cs [Design]",
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\gizem\\OneDrive\\Belgeler\\NTP - G\u0130Z\u0130ND\u0130R\\gizindir\\LoginForm.cs",
+              "RelativeDocumentMoniker": "LoginForm.cs",
+              "ToolTip": "C:\\Users\\gizem\\OneDrive\\Belgeler\\NTP - G\u0130Z\u0130ND\u0130R\\gizindir\\LoginForm.cs",
+              "RelativeToolTip": "LoginForm.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAUwCcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T15:06:36.375Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-11T13:42:07.859Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "match_model.cs",
-              "DocumentMoniker": "C:\\Users\\yasin\\OneDrive\\Belgeler\\gizindir\\gizindir\\model\\match_model.cs",
-              "RelativeDocumentMoniker": "model\\match_model.cs",
-              "ToolTip": "C:\\Users\\yasin\\OneDrive\\Belgeler\\gizindir\\gizindir\\model\\match_model.cs",
-              "RelativeToolTip": "model\\match_model.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gizem\\OneDrive\\Belgeler\\NTP - G\u0130Z\u0130ND\u0130R\\gizindir\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\gizem\\OneDrive\\Belgeler\\NTP - G\u0130Z\u0130ND\u0130R\\gizindir\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-10T12:55:23.964Z",
+              "WhenOpened": "2025-06-11T13:28:32.687Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "match_model.cs",
+              "DocumentMoniker": "C:\\Users\\gizem\\OneDrive\\Belgeler\\NTP - G\u0130Z\u0130ND\u0130R\\gizindir\\model\\match_model.cs",
+              "RelativeDocumentMoniker": "model\\match_model.cs",
+              "ToolTip": "C:\\Users\\gizem\\OneDrive\\Belgeler\\NTP - G\u0130Z\u0130ND\u0130R\\gizindir\\model\\match_model.cs",
+              "RelativeToolTip": "model\\match_model.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-10T12:55:23.964Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Main.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\yasin\\OneDrive\\Belgeler\\gizindir\\gizindir\\Main.cs",
+              "Title": "Main.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\gizem\\OneDrive\\Belgeler\\NTP - G\u0130Z\u0130ND\u0130R\\gizindir\\Main.cs",
               "RelativeDocumentMoniker": "Main.cs",
-              "ToolTip": "C:\\Users\\yasin\\OneDrive\\Belgeler\\gizindir\\gizindir\\Main.cs [Design]",
-              "RelativeToolTip": "Main.cs [Design]",
+              "ToolTip": "C:\\Users\\gizem\\OneDrive\\Belgeler\\NTP - G\u0130Z\u0130ND\u0130R\\gizindir\\Main.cs [Tasar\u0131m]",
+              "RelativeToolTip": "Main.cs [Tasar\u0131m]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-07T16:27:54.349Z",
-              "EditorCaption": " [Design]"
+              "EditorCaption": " [Tasar\u0131m]"
             }
           ]
         }
